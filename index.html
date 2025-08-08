@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Run Game — 跑酷游戏</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="ui">
+  <div id="title">
+    <h1>Run Game</h1>
+    <button id="startBtn">开始 / Start</button>
+    <p class="hint">手机：点击屏幕跳跃 · 电脑：空格跳</p>
+  </div>
+  <canvas id="gameCanvas"></canvas>
+  <div id="hud">
+    <div id="score">Score: <span id="scoreVal">0</span></div>
+    <div id="best">Best: <span id="bestVal">0</span></div>
+  </div>
+  <div id="overlay" class="hidden">
+    <div id="gameover">
+      <h2>Game Over</h2>
+      <p>Score: <span id="finalScore">0</span></p>
+      <button id="restartBtn">再来一局</button>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
